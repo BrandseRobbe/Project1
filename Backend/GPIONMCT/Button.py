@@ -18,3 +18,6 @@ class Button():
 
     def on_release(self, callback_method):
         GPIO.add_event_detect(self.pin, GPIO.RISING, callback=callback_method, bouncetime=self.bouncetime)
+
+    def on_action(self, callback_method):
+        GPIO.add_event_detect(self.pin, GPIO.BOTH, callback=callback_method, bouncetime=self.bouncetime)

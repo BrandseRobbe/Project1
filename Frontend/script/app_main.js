@@ -10,6 +10,10 @@ const enableSocketIO = function() {
   socket.on('datatest', function(waarde) {
     console.log(waarde);
   });
+  socket.on('toestand', function(waarde) {
+    console.log(waarde);
+    toestand.innerHTML = `${waarde} seconden`;
+  });
 };
 
 const init = function() {
