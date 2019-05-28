@@ -11,6 +11,7 @@
   font-weight: 600;
   src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
 }
+*/
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -24,7 +25,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: 'hkgrotest', Helvetica, arial, sans-serif;
+  font-family: Helvetica, arial, sans-serif; /* 'hkgrotest' */
   color: #111;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
