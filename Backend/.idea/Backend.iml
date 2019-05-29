@@ -9,7 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Database" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GPIONMCT" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Project1 Remote Python 3.5.3" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Project1 local Remote Python 3.5.3" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

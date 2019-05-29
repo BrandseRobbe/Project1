@@ -11,11 +11,11 @@ void setup() {
 
 void loop() {
   float positie1 = analogRead(softpot1);
-  int positie = floor((positie1 /1023) * 19);
- 
-  if ( waarde != positie){
-    waarde = positie;
-    Serial.println(positie);
-  delay(50);
+  positie1 = floor((positie1 /1023) * 19);
+  Serial.println(positie1);
+  float druk1 = analogRead(psr1);
+  Serial.println(druk1);
+  
+  
+  delay(10);
   }
-}

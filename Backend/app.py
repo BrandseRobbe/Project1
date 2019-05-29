@@ -39,8 +39,8 @@ def stuurtoestand(pin):
         print(verschil)
         verschil = round(verschil, 2)
         print(verschil)
-        socketio.emit("toestand", verschil)
         nieuwe_gebeurtenis = conn.set_data("INSERT INTO historiek (HistoriekID, UserID, Speeltijd) VALUES (NULL, %s, sec_to_time(%s));",[101,verschil])
+        socketio.emit("toestand", verschil)
 
 
 knop.on_action(stuurtoestand)
