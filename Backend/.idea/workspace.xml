@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775cdbe2-9d4e-4e77-9320-ccfcc76641a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/mypyfluid/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/randomtests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arduino/midi_test2/midi_test2.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../Arduino/midi_test2/midi_test2.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/DP1Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/DP1Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GPIONMCT/Button.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GPIONMCT/Lcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Lcd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/css/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/css/screen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/img/jpg/Open_Collaborative_Design_Asset.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/img/jpg/Smarter_Design_SystemsAsset.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/img/svg/Icon_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/img/svg/logo-figma.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/randomtests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="99">
+              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="9" selection-end-column="46" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -315,12 +303,12 @@
       <workItem from="1559580044720" duration="2802000" />
       <workItem from="1559719526792" duration="4428000" />
       <workItem from="1559764450012" duration="5378000" />
-      <workItem from="1559813082886" duration="6022000" />
+      <workItem from="1559813082886" duration="6023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44626000" />
+    <option name="totallyTimeSpent" value="44627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -331,7 +319,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2503536" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2503536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -504,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/randomtests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="99">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="9" selection-end-column="46" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

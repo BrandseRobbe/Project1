@@ -11,11 +11,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
 
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/screen.css" />
 
     <script defer src="script/dataHandler.js"></script>
-    <script defer src="script/app_main.js"></script>
+    <!--<script defer src="script/app_main.js"></script>-->
+    <script defer src="script/app_geschiedenis.js"></script>
   </head>
   <body>
     <header class="o-row  c-background__darkblue">
@@ -83,7 +88,7 @@
           <div class="c-header__nav">
             <nav class="c-nav">
               <ul class="o-list c-nav__list">
-                <li><a class="c-nav__link" href="geschiedenis.html">Geschiedenis</a></li>
+                <li><a class="c-nav__link" href="#!">Geschiedenis</a></li>
                 <li><a class="c-nav__link" href="#!">Effecten</a></li>
                 <li><a class="c-nav__link" href="#!">login</a></li>
               </ul>
@@ -93,75 +98,18 @@
       </div>
     </header>
 
-    <section class="o-row c-background__darkblue c-padding-titel">
+    <section class="o-row c-background__darkblue c-kleine-padding__titel">
       <div class=" o-container ">
-        <div class="o-layout o-layout--gutter o-layout--align-center o-layout--justify-center">
-          <div class="o-layout__item u-1-of-2-bp3 u-4-of-5">
-            <h1 class="c-lead c-lead--xl">
-              De Sensonizer
-            </h1>
-            <p class="c-lead c-lead--lg">
-              Leer, speel en create met het eerste prototype van de sensonizer. De sensor synthesizer.
-            </p>
-          </div>
-          <div class="o-layout__item u-1-of-2-bp3  u-4-of-5 o-layout o-layout--justify-center">
-            <figure>
-              <picture>
-                <img class="c-blue-shadow" src="./img/jpg/modulin-l.jpg" alt="Hero Animation" />
-              </picture>
-            </figure>
-          </div>
-        </div>
+        <h1 class="c-lead c-lead--xl c-align-text__left">
+          Geschiedenis
+        </h1>
       </div>
     </section>
 
     <section class="o-row c-margin--l">
       <div class="o-container">
         <article class="o-section ">
-          <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center  ">
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5">
-              <figure>
-                <picture>
-                  <img src="img/png/how_to_v1.png" alt="Open, collaborative design illustration" />
-                </picture>
-              </figure>
-            </div>
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5 o-layout o-layout--justify-center">
-              <div class="c-tekst--blok o-layout__item">
-                <h2 class="c-lead c-lead--l">
-                  Hoe te gebruiken
-                </h2>
-                <p class="c-lead c-lead--m">
-                  Zorg dat de voeding in het stopcontact zit, en verbind een afspeelapparaat via de audio poort aan de achterkant. Eenmaal het opgestart is bent u klaar!<br />
-                  Nu kunt u simpelweg op de touch sensors drukken, en u zult muziek kunnen spelen. Als u de knop op de achterkant ingedrukt houd terwijl u het apparaat kantelt, kan u ook het effect wijzigen.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="o-section">
-          <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center o-layout--row-reverse">
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5 ">
-              <figure>
-                <picture>
-                  <img src="img/jpg/effectenv2.jpg" alt="Smarter design systems illustration" />
-                </picture>
-              </figure>
-            </div>
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5 o-layout o-layout--justify-center">
-              <div class="c-tekst--blok o-layout__item">
-                <h2 class="c-lead c-lead--l">
-                  Effecten gebruiken
-                </h2>
-                <p class="c-lead c-lead--m">
-                  Via deze site kunt u het instrument type veranderen en enkele simpele effecten toevoegen zoals: gain, reverb en chorus.
-                </p>
-                <p class="c-lead c-lead--l">
-                  <a class="c-link-cta" href="#!">Zie meer</a>
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="c-chart">Hier komt een chart</div>
         </article>
       </div>
     </section>
