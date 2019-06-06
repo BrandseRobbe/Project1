@@ -4,14 +4,14 @@ from subprocess import check_output
 
 import socketio
 from RPi import GPIO
-from flask import Flask, request, jsonify, json
+from flask import Flask, request, jsonify
 from flask_socketio import SocketIO
 from flask_cors import CORS
 
 # from Database.DP1Database import Database
-from Database.DP1Database import Database
-from GPIONMCT.Button import Button
-from GPIONMCT.Lcd import Lcd
+from Modules.DP1Database import Database
+from Modules.Button import Button
+from Modules.Lcd import Lcd
 
 app = Flask(__name__)
 CORS(app)
@@ -33,7 +33,7 @@ try:
     display.enter()
     # ip adres ophalen en in een string steken
     ip = check_output(['hostname', '--all-ip-addresses'])
-    ip = str(ip.split()[-2]).strip("b").strip("'")
+    ip = str(ip.split()[1]).strip("b").strip("'")
     display.write_message(ip)
 
     timer = False
@@ -58,8 +58,8 @@ try:
             print(verschil)
             verschil = round(verschil, 2)
             print(verschil)
-            nieuwe_gebeurtenis = conn.set_data("INSERT INTO historiek (HistoriekID, UserID, Speeltijd) VALUES (NULL, %s, sec_to_time(%s));",[101,verschil])
             socketio.emit("toestand", verschil)
+            nieuwe_gebeurtenis = conn.set_data("INSERT INTO historiek (HistoriekID, UserID, Speeltijd) VALUES (NULL, %s, sec_to_time(%s));",[101,verschil])
 
 
     knop.on_action(stuurtoestand)

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="775cdbe2-9d4e-4e77-9320-ccfcc76641a0" name="Default Changelist" comment="" />
+    <list default="true" id="775cdbe2-9d4e-4e77-9320-ccfcc76641a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/mypyfluid/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomtests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arduino/midi_test2/midi_test2.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../Arduino/midi_test2/midi_test2.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DP1Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/DP1Database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GPIONMCT/Button.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GPIONMCT/Lcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Lcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/css/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/css/screen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/img/jpg/Open_Collaborative_Design_Asset.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/img/jpg/Smarter_Design_SystemsAsset.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/img/svg/Icon_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/img/svg/logo-figma.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+            <state relative-caret-position="360">
+              <caret line="34" column="57" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="57" />
               <folding>
                 <element signature="e#10#21#0" expanded="true" />
               </folding>
@@ -52,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GPIONMCT/Lcd.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/randomtests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="200">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -65,19 +81,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GPIONMCT/Button.py">
+        <entry file="file://$PROJECT_DIR$/Modules/mypyfluid/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Database/DP1Database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="160">
+              <caret line="458" column="38" selection-start-line="458" selection-start-column="38" selection-end-line="458" selection-end-column="38" />
+              <folding>
+                <element signature="e#1051#1071#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,6 +102,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Synth</find>
+      <find>Synth(</find>
+      <find>Synth</find>
+      <find>Synth</find>
+      <find>start</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -101,29 +120,21 @@
         <option value="$PROJECT_DIR$/Database/DP1Database.py" />
         <option value="$PROJECT_DIR$/GPIONMCT/Button.py" />
         <option value="$PROJECT_DIR$/app.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Backend.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/deployment.xml" />
-        <option value="$PROJECT_DIR$/.idea/remote-mappings.xml" />
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
+        <option value="$PROJECT_DIR$/Modules/fluidsynth.py" />
+        <option value="$PROJECT_DIR$/Modules/mypyfluid.py" />
+        <option value="$PROJECT_DIR$/randomtests.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
-    <option name="y" value="125" />
+    <option name="y" value="126" />
     <option name="width" value="1440" />
     <option name="height" value="775" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -140,12 +151,13 @@
             <path>
               <item name="Backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="GPIONMCT" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="mypyfluid" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,6 +179,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Robbe\OneDrive - Hogeschool West-Vlaanderen\School\Project\Code fase\Project1\Backend\Modules" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Robbe\OneDrive - Hogeschool West-Vlaanderen\School\Project\Code fase\Project1\Backend\GPIONMCT" />
     </key>
@@ -183,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.randomtests">
     <configuration name="DP1Database" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,7 +212,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Database/DP1Database.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Robbe\OneDrive - Hogeschool West-Vlaanderen\School\Project\Code fase\Project1\Backend\Modules\DP1Database.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -228,6 +243,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="randomtests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/randomtests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Backend" type="Python.FlaskServer">
       <option name="flaskDebug" value="true" />
       <module name="Backend" />
@@ -236,7 +273,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="sftp://dp-user@169.254.10.1:22/usr/bin/python3.5" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -248,9 +285,11 @@
       <item itemvalue="Flask server.Backend" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.DP1Database" />
+      <item itemvalue="Python.randomtests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.randomtests" />
         <item itemvalue="Python.DP1Database" />
       </list>
     </recent_temporary>
@@ -271,22 +310,28 @@
       <workItem from="1559311013802" duration="938000" />
       <workItem from="1559311985910" duration="645000" />
       <workItem from="1559314428911" duration="5701000" />
+      <workItem from="1559402124544" duration="2264000" />
+      <workItem from="1559575433170" duration="672000" />
+      <workItem from="1559580044720" duration="2802000" />
+      <workItem from="1559719526792" duration="4428000" />
+      <workItem from="1559764450012" duration="5378000" />
+      <workItem from="1559813082886" duration="6022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23060000" />
+    <option name="totallyTimeSpent" value="44626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11997319" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09383378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2503536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2503536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -295,7 +340,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -303,38 +348,47 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.116621986" />
+      <window_info anchor="right" id="Database" order="5" weight="0.2406639" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Backend$randomtests.coverage" NAME="randomtests Coverage Results" MODIFIED="1559823777987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Backend$DP1Database.coverage" NAME="DP1Database Coverage Results" MODIFIED="1559054748117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Database" />
     <SUITE FILE_PATH="coverage/Backend$Backend.coverage" NAME="Backend Coverage Results" MODIFIED="1559053096115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Backend$app.coverage" NAME="app Coverage Results" MODIFIED="1559322898686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Backend$app.coverage" NAME="app Coverage Results" MODIFIED="1559764538814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d65d8fc9-6749-4748-b537-3ea868a0ef92/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GPIONMCT/Button.py">
+    <entry file="file://$USER_HOME$/Downloads/fluidsynth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="-240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/fluidsynth.py" />
+    <entry file="file://$USER_HOME$/Downloads/pyFluidSynth-1.2.5-py3-none-any.whl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.686/pyfluidsynth-master/fluidsynth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="27" lean-forward="true" selection-end-line="726" />
+          <folding>
+            <element signature="e#1059#1079#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Database/DP1Database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/-877966802/1405239563/fluidsynth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GPIONMCT/Lcd.py">
+    <entry file="file://$PROJECT_DIR$/Modules/Lcd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
+        <state relative-caret-position="620">
           <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -342,12 +396,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/DP1Database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/jampi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="302" column="43" selection-start-line="302" selection-start-column="12" selection-end-line="302" selection-end-column="43" />
+          <folding>
+            <element signature="e#19#42#0" expanded="true" />
+            <element signature="e#402#1321#0" />
+            <element signature="e#487#697#0" />
+            <element signature="e#557#604#0" />
+            <element signature="e#655#697#0" />
+            <element signature="e#743#953#0" />
+            <element signature="e#813#860#0" />
+            <element signature="e#911#953#0" />
+            <element signature="e#998#1130#0" />
+            <element signature="e#1037#1095#0" />
+            <element signature="e#1175#1307#0" />
+            <element signature="e#1214#1272#0" />
+            <element signature="e#1347#1518#0" />
+            <element signature="e#1347#1383#0" />
+            <element signature="e#1545#2495#0" />
+            <element signature="e#1573#2495#0" />
+            <element signature="e#1750#2462#0" />
+            <element signature="e#1893#1924#0" />
+            <element signature="e#1970#2001#0" />
+            <element signature="e#2071#2341#0" />
+            <element signature="e#2421#2462#0" />
+            <element signature="e#2533#2907#0" />
+            <element signature="e#2633#2907#0" />
+            <element signature="e#2798#2907#0" />
+            <element signature="e#2935#3891#0" />
+            <element signature="e#3057#3218#0" />
+            <element signature="e#3243#3891#0" />
+            <element signature="e#3929#4764#0" />
+            <element signature="e#3996#4326#0" />
+            <element signature="e#4190#4269#0" />
+            <element signature="e#4226#4269#0" />
+            <element signature="e#4792#4914#0" />
+            <element signature="e#4941#5050#0" />
+            <element signature="e#5077#5202#0" />
+            <element signature="e#5119#5202#0" />
+            <element signature="e#5230#5302#0" />
+            <element signature="e#5340#5525#0" />
+            <element signature="e#5554#5735#0" />
+            <element signature="e#5765#5890#0" />
+            <element signature="e#5914#6115#0" />
+            <element signature="e#6141#7823#0" />
+            <element signature="e#6381#7823#0" />
+            <element signature="e#6428#7692#0" />
+            <element signature="e#6571#6602#0" />
+            <element signature="e#6648#6679#0" />
+            <element signature="e#6749#7692#0" />
+            <element signature="e#6778#7025#0" />
+            <element signature="e#7073#7326#0" />
+            <element signature="e#7374#7669#0" />
+            <element signature="e#9475#9509#0" />
+            <element signature="e#9865#9910#0" />
+            <element signature="e#9940#9985#0" />
+            <element signature="e#10039#10143#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/-877966802/1405239563/fluidsynth/fluidsynth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="105" column="22" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        <state relative-caret-position="360">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="57" />
           <folding>
             <element signature="e#10#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/mypyfluid/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="458" column="38" selection-start-line="458" selection-start-column="38" selection-end-line="458" selection-end-column="38" />
+          <folding>
+            <element signature="e#1051#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomtests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

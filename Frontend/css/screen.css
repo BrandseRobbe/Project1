@@ -1,6 +1,8 @@
 /*------------------------------------*\
   #FONTS
 \*------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*
 @font-face {
   font-family: 'hkgrotest';
   font-weight: 400;
@@ -11,7 +13,16 @@
   font-weight: 600;
   src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
 }
+
 */
+/*------------------------------------*\
+  #kleuren
+\*------------------------------------*/
+:root {
+  --donkerblauw: #02002e;
+  --wit: #ffffff;
+  --accent: #38beff;
+}
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -25,7 +36,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: Helvetica, arial, sans-serif; /* 'hkgrotest' */
+  font-family: 'Montserrat', arial, sans-serif;
   color: #111;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -46,13 +57,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #e85e00;
+  background: #38beff;
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #e85e00;
+  background: var(--accent);
   color: white;
   text-shadow: none;
 }
@@ -183,7 +194,7 @@ a:focus {
 
 .o-row {
   position: relative;
-  padding: 24px 24px 0;
+  padding: 24px 16px 0;
   display: flex;
   flex-direction: column;
 }
@@ -436,18 +447,18 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 0px 24px 0px;
 }
-.c-background__dark {
-  background-color: #0c0d0c;
+.c-background__darkblue {
+  background-color: var(--donkerblauw);
 }
 .c-logo {
-  height: 24px;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
-.c-logo__symbol {
-  width: 21.33px;
+.c-logo__svg {
   height: 32px;
 }
 .c-header__nav {
@@ -459,21 +470,22 @@ a:focus {
   line-height: 19px;
 }
 .c-nav__link {
-  color: #afb3b1;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
-  padding: 0px 16px;
-  padding-top: 10px;
+  padding-left: 24px;
+  line-height: 24px;
 }
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
-  color: #afb3b1;
+  color: #ffffff;
 }
 .c-nav__link:hover,
 .c-nav__link:focus {
-  color: #3ec18f;
+  color: white;
+  text-shadow: 0 0 16px var(--accent);
 }
 .c-link-cta {
   display: inline-block;
@@ -483,7 +495,7 @@ a:focus {
   font-weight: 600;
   padding: 8px 20px;
   border-radius: 3px;
-  background: #3ec18f;
+  background: var(--donkerblauw);
   color: white;
 }
 
@@ -496,7 +508,7 @@ a:focus {
 .c-link-cta:hover,
 .c-link-cta:focus {
   color: white;
-  background: #19a26d;
+  box-shadow: 0px 0px 8px 1px var(--accent);
 }
 
 .c-link-cta:active {
@@ -508,6 +520,10 @@ a:focus {
   font-size: 18px;
   line-height: 24px;
   font-weight: 600px;
+}
+
+.c-blue-shadow {
+  box-shadow: 0px 0px 16px 1px var(--accent);
 }
 
 @media (min-width: 1024px) {
@@ -552,7 +568,8 @@ a:focus {
 @media (min-width: 992px) {
   .c-lead--xl {
     font-size: 48px;
-    line-height: 48px;
+    font-weight: 500;
+    line-height: 72px;
     font-weight: 600;
     text-align: left;
   }
@@ -599,17 +616,10 @@ a:focus {
   text-align: center;
 }
 .c-lead--m {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   color: #0c0d0c;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .c-lead--l,
-  .c-lead--m {
-    text-align: left;
-  }
 }
 
 .c-margin--l {
