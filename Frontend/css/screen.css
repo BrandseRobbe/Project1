@@ -541,6 +541,7 @@ a:focus {
 
 .c-lead {
   position: relative;
+  color: var(--donkerblauw);
 }
 .c-lead--xl {
   color: #ffffff;
@@ -726,6 +727,9 @@ a:focus {
 .c-tekst__rood {
   color: red;
 }
+.c-tekst__groen {
+  color: green;
+}
 .c-submit {
   font-size: 18px;
   font-weight: 500;
@@ -790,6 +794,14 @@ a:focus {
 @media (min-width: 1440px) {
   .c-login {
     padding: 32px 40px;
+  }
+}
+.c-center__small {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .c-center__small {
+    justify-content: left;
   }
 }
 

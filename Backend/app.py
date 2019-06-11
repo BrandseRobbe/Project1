@@ -38,15 +38,15 @@ current_userid = None
 def lees_seriele_noten():
     print("start loop on noten te lezen")
     while True:
-        # global current_userid
-        # if data.lees_bericht() and current_userid is not None:
-        #     print("update hiestoriek")
-        #     conn.set_data(
-        #         'update historiek set speeltijd = addtime(speeltijd, "00:01:00") where userid = %s and date(datum) = current_date()',
-        #         [current_userid])
-        #     time.sleep(60)
+        global current_userid
+        if data.lees_bericht() and current_userid is not None:
+            print("update hiestoriek")
+            conn.set_data(
+                'update historiek set speeltijd = addtime(speeltijd, "00:01:00") where userid = %s and date(datum) = current_date()',
+                [current_userid])
+            time.sleep(60)
 
-        print(data.lees_bericht())
+        # print(data.lees_bericht())
 
 
 # print(data.lees_bericht())
@@ -80,6 +80,9 @@ try:
     ip = check_output(['hostname', '--all-ip-addresses'])
     print(ip)
     ip = str(ip.split()[0]).strip("b").strip("'")
+    display.displayOn(1,1)
+    display.write_message("ip-adres:")
+    display.enter()
     display.write_message(ip)
 
     timer = False
@@ -198,9 +201,12 @@ try:
 
     @socketio.on("effect_toepassen")
     def effect_toepassen(json_data):
-        ccvals = json_data["ccvals"]
-
         fs.system_reset()
+        print(json_data)
+        ccvals = json_data["ccvals"]
+        fs.program_change(0, int(json_data["sfnummer"]))
+        print("change to inst: %s"%json_data["sfnummer"])
+
         for cc, val in json_data["ccvals"].items():
             fs.cc(0, int(cc), val)
 
