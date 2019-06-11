@@ -27,7 +27,8 @@ conn = Database(app=app, user='mct', password='mct', db='Project1', host='localh
 endpoint = '/api/v1'
 GPIO.setmode(GPIO.BCM)
 # print("Maak synth aan")
-fs = pyfluidsynth.Synth(gain=4.5)
+fs = pyfluidsynth.Synth(gain=3)
+
 
 data = SerialRaspberry(500000, '/dev/ttyACM0')
 
@@ -37,13 +38,15 @@ current_userid = None
 def lees_seriele_noten():
     print("start loop on noten te lezen")
     while True:
-        global current_userid
-        if data.lees_bericht() and current_userid is not None:
-            print("update hiestoriek")
-            conn.set_data(
-                'update historiek set speeltijd = addtime(speeltijd, "00:01:00") where userid = %s and date(datum) = current_date()',
-                [current_userid])
-            time.sleep(60)
+        # global current_userid
+        # if data.lees_bericht() and current_userid is not None:
+        #     print("update hiestoriek")
+        #     conn.set_data(
+        #         'update historiek set speeltijd = addtime(speeltijd, "00:01:00") where userid = %s and date(datum) = current_date()',
+        #         [current_userid])
+        #     time.sleep(60)
+
+        print(data.lees_bericht())
 
 
 # print(data.lees_bericht())
@@ -57,6 +60,7 @@ try:
     sfid1 = fs.sfload("/usr/share/sounds/sf2/FluidR3_GM.sf2")
     print("program soundfont")
     fs.program_select(0, sfid1, 0, 0)
+
     print("program change")
     fs.program_change(0, 1)
 
@@ -68,10 +72,11 @@ try:
     datapinnen = [20, 21, 26, 19, 13, 6, 5, 22]
     # print(datapinnen[::-1])
     display = Lcd(datapinnen, rs_pin, e_pin)
-    display.displayOn(1, 1)
-    display.write_message("ip-adres: ")
-    display.enter()
-    # ip adres ophalen en in een string steken
+
+
+
+
+
     ip = check_output(['hostname', '--all-ip-addresses'])
     print(ip)
     ip = str(ip.split()[0]).strip("b").strip("'")
@@ -182,10 +187,6 @@ try:
     def connecting():
         socketio.emit("connected")
         print("Connection with client established")
-
-        # randomdata = conn.get_data("select * from users")
-        # print(randomdata)
-        # socketio.emit("datatest",randomdata)
 
 
     @socketio.on("logout")

@@ -1,4 +1,4 @@
-const IP = 'http://192.168.0.117:5000';
+const IP = 'http://192.168.0.116:5000';
 const socket = io.connect(IP);
 let testknop;
 

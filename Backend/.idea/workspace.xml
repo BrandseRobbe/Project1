@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775cdbe2-9d4e-4e77-9320-ccfcc76641a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Robbe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/SerialRaspberry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arduino/midi_test1/midi_test1.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../Arduino/midi_test1/midi_test1.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomtests.py" beforeDir="false" afterPath="$PROJECT_DIR$/randomtests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/css/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/css/screen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/geschiedenis.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/geschiedenis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/script/app_geschiedenis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/script/dataHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/script/dataHandler.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,12 +45,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="190" column="26" lean-forward="true" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
+            <state relative-caret-position="280">
+              <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
               <folding>
-                <element signature="e#3150#3229#0" />
-                <element signature="e#5569#5783#0" />
-                <element signature="e#5868#6010#0" />
+                <element signature="e#2239#2999#0" />
+                <element signature="e#3193#3272#0" />
+                <element signature="e#3367#4199#0" />
+                <element signature="e#4281#5551#0" />
+                <element signature="e#5484#5562#0" />
+                <element signature="e#5882#5962#0" />
               </folding>
             </state>
           </provider>
@@ -112,6 +103,7 @@
       <find>Synth(</find>
       <find>start</find>
       <find>time.sleep</find>
+      <find>fs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -329,11 +321,12 @@
       <workItem from="1560200180254" duration="13000" />
       <workItem from="1560200381680" duration="2598000" />
       <workItem from="1560203132309" duration="1140000" />
+      <workItem from="1560282020321" duration="2586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74907000" />
+    <option name="totallyTimeSpent" value="77493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,18 +341,18 @@
     <frame x="2553" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10857909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10991957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.20226309" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.20226309" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32904148" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.3281471" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32956153" />
@@ -380,7 +373,7 @@
     <SUITE FILE_PATH="coverage/Backend$randomtests.coverage" NAME="randomtests Coverage Results" MODIFIED="1560114472440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Backend$DP1Database.coverage" NAME="DP1Database Coverage Results" MODIFIED="1559054748117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Database" />
     <SUITE FILE_PATH="coverage/Backend$Backend.coverage" NAME="Backend Coverage Results" MODIFIED="1559893819144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Backend$app.coverage" NAME="app Coverage Results" MODIFIED="1560203821187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Backend$app.coverage" NAME="app Coverage Results" MODIFIED="1560284525008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d65d8fc9-6749-4748-b537-3ea868a0ef92/console.sql" />
@@ -424,12 +417,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="190" column="26" lean-forward="true" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
+        <state relative-caret-position="280">
+          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
-            <element signature="e#3150#3229#0" />
-            <element signature="e#5569#5783#0" />
-            <element signature="e#5868#6010#0" />
+            <element signature="e#2239#2999#0" />
+            <element signature="e#3193#3272#0" />
+            <element signature="e#3367#4199#0" />
+            <element signature="e#4281#5551#0" />
+            <element signature="e#5484#5562#0" />
+            <element signature="e#5882#5962#0" />
           </folding>
         </state>
       </provider>
