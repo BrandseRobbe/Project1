@@ -15,16 +15,12 @@
 			crossorigin="anonymous"
 		></script>
 
-		<script src="https://www.amcharts.com/lib/4/core.js"></script>
-		<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-		<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/screen.css" />
 
 		<script defer src="script/dataHandler.js"></script>
 		<script defer src="script/global.js"></script>
-		<script defer src="script/geschiedenis.js"></script>
+		<script defer src="script/login.js"></script>
 	</head>
 	<body>
 		<header class="o-row  c-background__darkblue">
@@ -106,7 +102,6 @@
 					<div class="c-header__nav">
 						<nav class="c-nav">
 							<ul class="o-list c-nav__list">
-								<li><a class="c-nav__link" href="geschiedenis.html">Geschiedenis</a></li>
 								<li><a class="c-nav__link" href="effecten.html">Effecten</a></li>
 								<li><a class="c-nav__link" href="login.html">login</a></li>
 							</ul>
@@ -116,18 +111,32 @@
 			</div>
 		</header>
 
-		<section class="o-row c-background__darkblue c-kleine-padding__titel">
-			<div class=" o-container ">
-				<h1 class="c-lead c-lead--xl c-align-text__left">
-					Geschiedenis
-				</h1>
-			</div>
-		</section>
-
 		<section class="o-row c-margin--l">
 			<div class="o-container">
 				<article class="o-section ">
-					<div class="c-chart">Hier komt een chart</div>
+					<div class="o-layout o-layout--justify-center">
+						<div class=" u-4-of-5 u-1-of-2-bp2 u-3-of-5-bp2 ">
+							<div class="c-login">
+								<h2 class="c-lead--ml">Login op je account</h2>
+								<form class="c-form" onsubmit="return false">
+									<fieldset class="c-field__label">
+										<legend class="c-legend">Email</legend>
+										<input class="c-input" type="email" id="email" required autofocus /><br />
+									</fieldset>
+
+									<fieldset class="c-field__label">
+										<legend class="c-legend">Passwoord</legend>
+										<input class="c-input" type="password" id="passwoord" required /><br />
+									</fieldset>
+									<div id="js-error__message"></div>
+									<a class="c-tekst__link" href="register.html">
+										<p class="c-tekst">Heeft u nog geen account?</p>
+									</a>
+									<input class="c-link-cta c-submit" type="submit" name="Login" value="Login" />
+								</form>
+							</div>
+						</div>
+					</div>
 				</article>
 			</div>
 		</section>

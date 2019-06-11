@@ -1,169 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Project 1</title>
-    <meta name="description" content="This is my HTML5 boilerplate." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-TileColor" content="#30c2ff" />
-    <meta name="theme-color" content="#0c0d0c" />
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Project 1</title>
+		<meta name="description" content="This is my HTML5 boilerplate." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="msapplication-TileColor" content="#30c2ff" />
+		<meta name="theme-color" content="#0c0d0c" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+			integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I="
+			crossorigin="anonymous"
+		></script>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/screen.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/screen.css" />
 
-    <script defer src="script/dataHandler.js"></script>
-    <script defer src="script/app_main.js"></script>
-  </head>
-  <body>
-    <header class="o-row  c-background__darkblue">
-      <div class="o-container">
-        <div class="c-header">
-          <div class="c-header__logo">
-            <h1 class="c-logo c-logo__svg">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="155.5" height="47" viewBox="0 0 155.5 47">
-                <defs>
-                  <style>
-                    .cls-1,
-                    .cls-4 {
-                      fill: #fff;
-                    }
+		<script defer src="script/dataHandler.js"></script>
+		<script defer src="script/global.js"></script>
+		<script defer src="script/index.js"></script>
+	</head>
+	<body>
+		<header class="o-row  c-background__darkblue">
+			<div class="o-container">
+				<div class="c-header">
+					<div class="c-header__logo">
+						<a href="index.html">
+							<h1 class="c-logo c-logo__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="155.5" height="47" viewBox="0 0 155.5 47">
+									<defs>
+										<style>
+											.cls-1,
+											.cls-4 {
+												fill: #fff;
+											}
 
-                    .cls-2,
-                    .cls-3 {
-                      fill: #02002e;
-                    }
+											.cls-2,
+											.cls-3 {
+												fill: #02002e;
+											}
 
-                    .cls-3,
-                    .cls-4 {
-                      font-size: 20px;
-                      font-family: Montserrat-SemiBold, Montserrat;
-                      font-weight: 600;
-                    }
+											.cls-3,
+											.cls-4 {
+												font-size: 20px;
+												font-family: Montserrat-SemiBold, Montserrat;
+												font-weight: 600;
+											}
 
-                    .cls-5 {
-                      filter: url(#Path_989);
-                    }
+											.cls-5 {
+												filter: url(#Path_989);
+											}
 
-                    .cls-6 {
-                      filter: url(#Rectangle_399);
-                    }
-                  </style>
-                  <filter id="Rectangle_399" x="0" y="1.5" width="87" height="44" filterUnits="userSpaceOnUse">
-                    <feOffset input="SourceAlpha" />
-                    <feGaussianBlur stdDeviation="2" result="blur" />
-                    <feFlood flood-color="#38beff" />
-                    <feComposite operator="in" in2="blur" />
-                    <feComposite in="SourceGraphic" />
-                  </filter>
-                  <filter id="Path_989" x="73.5" y="0" width="82" height="47" filterUnits="userSpaceOnUse">
-                    <feOffset input="SourceAlpha" />
-                    <feGaussianBlur stdDeviation="2.5" result="blur-2" />
-                    <feFlood flood-color="#38beff" />
-                    <feComposite operator="in" in2="blur-2" />
-                    <feComposite in="SourceGraphic" />
-                  </filter>
-                </defs>
-                <g id="Group_7" data-name="Group 7" transform="translate(6 7.5)">
-                  <g class="cls-6" transform="matrix(1, 0, 0, 1, -6, -7.5)">
-                    <path id="Rectangle_399-2" data-name="Rectangle 399" class="cls-1" d="M7,0H75a0,0,0,0,1,0,0V32a0,0,0,0,1,0,0H7a7,7,0,0,1-7-7V7A7,7,0,0,1,7,0Z" transform="translate(6 7.5)" />
-                  </g>
-                  <g class="cls-5" transform="matrix(1, 0, 0, 1, -6, -7.5)">
-                    <path id="Path_989-2" data-name="Path 989" class="cls-2" d="M0,0H58.315C63.112,0,67,3.582,67,8V24c0,4.418-3.888,8-8.685,8H0Z" transform="translate(81 7.5)" />
-                  </g>
-                  <rect id="Rectangle_601" data-name="Rectangle 601" class="cls-1" width="11" height="32" transform="translate(64)" />
-                  <text id="SENSO" class="cls-3" transform="translate(3 23)"><tspan x="0" y="0">SENSO</tspan></text>
-                  <text id="NIZER" class="cls-4" transform="translate(75 23)"><tspan x="0" y="0">NIZER</tspan></text>
-                </g>
-              </svg>
-            </h1>
-          </div>
-          <div class="c-header__nav">
-            <nav class="c-nav">
-              <ul class="o-list c-nav__list">
-                <li><a class="c-nav__link" href="geschiedenis.html">Geschiedenis</a></li>
-                <li><a class="c-nav__link" href="#!">Effecten</a></li>
-                <li><a class="c-nav__link" href="#!">login</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+											.cls-6 {
+												filter: url(#Rectangle_399);
+											}
+										</style>
+										<filter id="Rectangle_399" x="0" y="1.5" width="87" height="44" filterUnits="userSpaceOnUse">
+											<feOffset input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="2" result="blur" />
+											<feFlood flood-color="#38beff" />
+											<feComposite operator="in" in2="blur" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+										<filter id="Path_989" x="73.5" y="0" width="82" height="47" filterUnits="userSpaceOnUse">
+											<feOffset input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="2.5" result="blur-2" />
+											<feFlood flood-color="#38beff" />
+											<feComposite operator="in" in2="blur-2" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+									</defs>
+									<g id="Group_7" data-name="Group 7" transform="translate(6 7.5)">
+										<g class="cls-6" transform="matrix(1, 0, 0, 1, -6, -7.5)">
+											<path
+												id="Rectangle_399-2"
+												data-name="Rectangle 399"
+												class="cls-1"
+												d="M7,0H75a0,0,0,0,1,0,0V32a0,0,0,0,1,0,0H7a7,7,0,0,1-7-7V7A7,7,0,0,1,7,0Z"
+												transform="translate(6 7.5)"
+											/>
+										</g>
+										<g class="cls-5" transform="matrix(1, 0, 0, 1, -6, -7.5)">
+											<path
+												id="Path_989-2"
+												data-name="Path 989"
+												class="cls-2"
+												d="M0,0H58.315C63.112,0,67,3.582,67,8V24c0,4.418-3.888,8-8.685,8H0Z"
+												transform="translate(81 7.5)"
+											/>
+										</g>
+										<rect id="Rectangle_601" data-name="Rectangle 601" class="cls-1" width="11" height="32" transform="translate(64)" />
+										<text id="SENSO" class="cls-3" transform="translate(3 23)"><tspan x="0" y="0">SENSO</tspan></text>
+										<text id="NIZER" class="cls-4" transform="translate(75 23)"><tspan x="0" y="0">NIZER</tspan></text>
+									</g>
+								</svg>
+							</h1>
+						</a>
+					</div>
+					<div class="c-header__nav">
+						<nav class="c-nav">
+							<ul class="o-list c-nav__list">
+								<li><a class="c-nav__link" href="effecten.html">Effecten</a></li>
+								<li><a class="c-nav__link" href="login.html">login</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <section class="o-row c-background__darkblue c-padding-titel">
-      <div class=" o-container ">
-        <div class="o-layout o-layout--gutter o-layout--align-center o-layout--justify-center">
-          <div class="o-layout__item u-1-of-2-bp3 u-4-of-5">
-            <h1 class="c-lead c-lead--xl">
-              De Sensonizer
-            </h1>
-            <p class="c-lead c-lead--lg">
-              Leer, speel en create met het eerste prototype van de sensonizer. De sensor synthesizer.
-            </p>
-          </div>
-          <div class="o-layout__item u-1-of-2-bp3  u-4-of-5 o-layout o-layout--justify-center">
-            <figure>
-              <picture>
-                <img class="c-blue-shadow" src="./img/jpg/modulin-l.jpg" alt="Hero Animation" />
-              </picture>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="o-row c-background__darkblue c-padding-titel">
+			<div class=" o-container ">
+				<div class="o-layout o-layout--gutter o-layout--align-center o-layout--justify-center">
+					<div class="o-layout__item u-1-of-2-bp3 u-4-of-5">
+						<h1 class="c-lead c-lead--xl">
+							De Sensonizer
+						</h1>
+						<p class="c-lead c-lead--lg">
+							Leer, speel en create met het eerste prototype van de sensonizer. De sensor synthesizer.
+						</p>
+					</div>
+					<div class="o-layout__item u-1-of-2-bp3  u-4-of-5 o-layout o-layout--justify-center">
+						<figure>
+							<picture>
+								<img class="c-blue-shadow" src="./img/jpg/modulin-l.jpg" alt="Hero Animation" />
+							</picture>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="o-row c-margin--l">
-      <div class="o-container">
-        <article class="o-section ">
-          <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center  ">
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5">
-              <figure>
-                <picture>
-                  <img src="img/png/how_to_v1.png" alt="Open, collaborative design illustration" />
-                </picture>
-              </figure>
-            </div>
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5 o-layout o-layout--justify-center">
-              <div class="c-tekst--blok o-layout__item">
-                <h2 class="c-lead c-lead--l">
-                  Hoe te gebruiken
-                </h2>
-                <p class="c-lead c-lead--m">
-                  Zorg dat de voeding in het stopcontact zit, en verbind een afspeelapparaat via de audio poort aan de achterkant. Eenmaal het opgestart is bent u klaar!<br />
-                  Nu kunt u simpelweg op de touch sensors drukken, en u zult muziek kunnen spelen. Als u de knop op de achterkant ingedrukt houd terwijl u het apparaat kantelt, kan u ook het effect wijzigen.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="o-section">
-          <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center o-layout--row-reverse">
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5 ">
-              <figure>
-                <picture>
-                  <img src="img/jpg/effectenv2.jpg" alt="Smarter design systems illustration" />
-                </picture>
-              </figure>
-            </div>
-            <div class="o-layout__item u-1-of-2-bp3 u-4-of-5 o-layout o-layout--justify-center">
-              <div class="c-tekst--blok o-layout__item">
-                <h2 class="c-lead c-lead--l">
-                  Effecten gebruiken
-                </h2>
-                <p class="c-lead c-lead--m">
-                  Via deze site kunt u het instrument type veranderen en enkele simpele effecten toevoegen zoals: gain, reverb en chorus.
-                </p>
-                <p class="c-lead c-lead--l">
-                  <a class="c-link-cta" href="#!">Zie meer</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-  </body>
+		<section class="o-row c-margin--l">
+			<div class="o-container">
+				<article class="o-section ">
+					<div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center  ">
+						<div class="o-layout__item u-1-of-2-bp3 u-4-of-5">
+							<figure>
+								<picture>
+									<img src="img/png/how_to_v1.png" alt="Open, collaborative design illustration" />
+								</picture>
+							</figure>
+						</div>
+						<div class="o-layout__item u-1-of-2-bp3 u-4-of-5 o-layout o-layout--justify-center">
+							<div class="c-tekst--blok o-layout__item">
+								<h2 class="c-lead c-lead--l">
+									Hoe te gebruiken
+								</h2>
+								<p class="c-lead c-lead--m">
+									Zorg dat de voeding in het stopcontact zit, en verbind een afspeelapparaat via de audio poort aan de achterkant. Eenmaal het opgestart
+									is bent u klaar!<br />
+									Nu kunt u simpelweg op de touch sensors drukken, en u zult muziek kunnen spelen. Als u de knop op de achterkant ingedrukt houd terwijl
+									u het apparaat kantelt, kan u ook het effect wijzigen.
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="o-section">
+					<div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center o-layout--row-reverse">
+						<div class="o-layout__item u-1-of-2-bp3 u-4-of-5 ">
+							<figure>
+								<picture>
+									<img src="img/jpg/effectenv2.jpg" alt="Smarter design systems illustration" />
+								</picture>
+							</figure>
+						</div>
+						<div class="o-layout__item u-1-of-2-bp3 u-4-of-5 o-layout o-layout--justify-center">
+							<div class="c-tekst--blok o-layout__item">
+								<h2 class="c-lead c-lead--l">
+									Effecten gebruiken
+								</h2>
+								<p class="c-lead c-lead--m">
+									Via deze site kunt u het instrument type veranderen en enkele simpele effecten toevoegen zoals: gain, reverb en chorus.
+								</p>
+								<p class="c-lead c-lead--l">
+									<a class="c-link-cta" href="effecten.html">Zie meer</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	</body>
 </html>
