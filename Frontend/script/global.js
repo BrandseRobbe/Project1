@@ -1,4 +1,4 @@
-const IP = 'http://192.168.0.116:5000';
+const IP = 'http://192.168.0.124:5000';
 const socket = io.connect(IP);
 let testknop;
 
@@ -23,5 +23,15 @@ const logincontrol = function() {
     });
   }
 };
-
-document.addEventListener('DOMContentLoaded', logincontrol);
+const set_userID = function() {
+  if (localStorage.getItem('userid')) {
+    socket.emit('setuser', localStorage.getItem('userid'));
+  } else {
+    socket.emit('setuser', localStorage.getItem('userid'));
+  }
+};
+const init1 = function() {
+  logincontrol();
+  set_userID();
+};
+document.addEventListener('DOMContentLoaded', init1);

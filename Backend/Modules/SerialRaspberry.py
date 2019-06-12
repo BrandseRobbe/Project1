@@ -25,23 +25,26 @@ class SerialRaspberry:
         return uitvoer
 
     def lees_bericht(self):
-        # als het 3 spaties zijn betekent dat het een niewue lijn is
-        uitvoer = ""
-        doorgaan = True
-        # teller = 0
-        while doorgaan:
-            # print('loop2')
-            # teller+=1
-            teken = self.lees_char()
-            if teken != "/n":
-                uitvoer += teken
-            # elif teller == 100:
-            #     doorgaan  =False
-            else :
-                doorgaan = False
-        # teller = 0
-        # print('loop2 done')
-        return uitvoer
+        try:
+            # als het 3 spaties zijn betekent dat het een niewue lijn is
+            uitvoer = ""
+            doorgaan = True
+            # teller = 0
+            while doorgaan:
+                # print('loop2')
+                # teller+=1
+                teken = self.lees_char()
+                if teken != "/n":
+                    uitvoer += teken
+                # elif teller == 100:
+                #     doorgaan  =False
+                else :
+                    doorgaan = False
+            # teller = 0
+            # print('loop2 done')
+            return uitvoer
+        except Exception:
+            return  uitvoer
 
     @property
     def soort_poort(self):

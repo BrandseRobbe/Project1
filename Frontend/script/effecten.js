@@ -26,17 +26,25 @@ const enableSocketIO = function() {
     console.log(waarde);
   });
 };
+const border_toggle = function(element) {
+  let bordered = document.getElementsByClassName('c-selected-border');
+  if (bordered.length > 0) {
+    bordered[0].classList.remove('c-selected-border');
+  }
+  element.classList.add('c-selected-border');
+};
+
 const handle_events = function() {
   console.log('hande events');
   document.querySelector('#js-def_val').addEventListener('click', function() {
-    console.log('def_val');
-
+    console.log('default value');
     let testdata = {
       sfnummer: 0,
       ccvals: {}
     };
     console.log(testdata);
     socket.emit('effect_toepassen', testdata);
+    border_toggle(this);
   });
   document.querySelector('#js-effect1').addEventListener('click', function() {
     console.log('js-effect1');
@@ -48,6 +56,7 @@ const handle_events = function() {
     };
     console.log(testdata);
     socket.emit('effect_toepassen', testdata);
+    border_toggle(this);
   });
   document.querySelector('#js-effect2').addEventListener('click', function() {
     console.log('js-effect2');
@@ -59,6 +68,7 @@ const handle_events = function() {
     };
     console.log(testdata);
     socket.emit('effect_toepassen', testdata);
+    border_toggle(this);
   });
   document.querySelector('#js-effect3').addEventListener('click', function() {
     console.log('js-effect3');
@@ -70,6 +80,7 @@ const handle_events = function() {
     };
     console.log(testdata);
     socket.emit('effect_toepassen', testdata);
+    border_toggle(this);
   });
 };
 

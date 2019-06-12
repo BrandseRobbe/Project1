@@ -464,14 +464,7 @@ a:focus {
 .c-logo__svg {
   height: 24px;
 }
-.c-header__nav {
-  display: none;
-}
 
-.c-nav {
-  font-size: 20px;
-  line-height: 24px;
-}
 .c-nav__link {
   color: #ffffff;
   text-decoration: none;
@@ -530,7 +523,16 @@ a:focus {
   box-shadow: 0px 0px 16px 1px var(--accent);
 }
 
-@media (min-width: 1024px) {
+.c-header__nav {
+  display: none;
+}
+
+.c-nav {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
   .c-header__nav {
     display: block;
   }
@@ -621,7 +623,7 @@ a:focus {
   text-align: center;
 }
 .c-lead--m {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #0c0d0c;
@@ -633,7 +635,6 @@ a:focus {
   margin-bottom: 24px;
   text-align: center;
 }
-
 .c-margin--l {
   margin-top: 24px;
 }
@@ -805,6 +806,10 @@ a:focus {
   }
 }
 
+.c-selected-border {
+  border: 3px solid var(--donkerblauw);
+  border-radius: 20px;
+}
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
