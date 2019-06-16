@@ -38,34 +38,30 @@ current_userid = None
 
 def lees_seriele_noten():
     while True:
-        print("start loop on noten te lezen")
+        # print("start loop on noten te lezen")
         global current_userid
         if data.lees_bericht() and current_userid is not None:
             print("update hiestoriek")
             conn.set_data(
                 'update historiek set speeltijd = addtime(speeltijd, "00:00:10") where userid = %s and date(datum) = current_date()',
                 [current_userid])
+            geschiedenis()
             time.sleep(10)
         time.sleep(0.05)
 
 
 def lees_gyro():
     while True:
-        print("lees gyro")
+        # print("lees gyro")
         time.sleep(0.05)
-        data.lees_bericht() #seriele communicatie door doorschuiven -> anders stapelen ze op en is het dus geen live data meer
-        if knop.pressed:
-            gyro = mpu9250.readGyro()
+        data.lees_bericht()  # seriele communicatie door doorschuiven -> anders stapelen ze op en is het dus geen live data meer
+        gyro = mpu9250.readGyro()
 
-            if round(gyro['x']) in range(0,2):
-                if gyro['x'] > 0 and gyro['x'] < 1.023:
-                    ccval = round(gyro['x'] * 123)
-                    print("ccval = %s"%ccval)
-                    fs.cc(0, 1, ccval)
-        else:
-            fs.cc(0, 1, 0)
-
-
+        if round(gyro['x']) in range(0, 2):
+            if gyro['x'] > 0 and gyro['x'] < 1.023:
+                ccval = round(gyro['x'] * 123)
+                print("ccval = %s" % ccval)
+                fs.cc(0, 1, ccval)
 
 
 try:
@@ -80,7 +76,6 @@ try:
     print("program change")
     fs.program_change(0, 1)
 
-    knop = Button(16)
     rs_pin = 17
     e_pin = 27
     # datapinnen = [22, 5, 6, 13, 19, 26, 21, 20]
@@ -88,17 +83,23 @@ try:
     # print(datapinnen[::-1])
     display = Lcd(datapinnen, rs_pin, e_pin)
 
-    ip = check_output(['hostname', '--all-ip-addresses'])
-    if len(ip.split()) >= 2 :
-        ip = str(ip.split()[1]).strip("b").strip("'")
-    else:
-        ip = str(ip.split()[0]).strip("b").strip("'")
+    ip1 = check_output(['sudo', 'hostname', '--all-ip-addresses']).decode('UTF-8').split(" ")
+    ip = ip1[0]
+    if ip == '169.254.10.1' or ip == '169.254.14.33':
+        ip = ip1[1]
+    # import socket
+    #
+    # time.sleep(5)
+    # testIP = "8.8.8.8"
+    # s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # s.connect((testIP, 0))
+    # ip = s.getsockname()[0]
+    # print(ip)
 
     display.displayOn(1, 1)
-    display.write_message("ip-adres:")
+    display.write_message("IP-adres:")
     display.enter()
     display.write_message(ip)
-
 
 
     def h5(pw):
@@ -170,21 +171,21 @@ try:
             return jsonify(output)
 
 
-    # @app.route(endpoint + '/geschiedenis', methods=['GET'])
-    # def geschiedenis():
-    #     if request.method == "GET":
-    #         global current_userid
-    #         print(current_userid)
-    #         user_geschiedenis = conn.get_data('SELECT concat(Date(Datum)) as datum, concat(Speeltijd) as speeltijd, concat((hour(speeltijd)*60) + Minute(Speeltijd)) as minuten FROM historiek where userid = %s and datum between "2019-06-01" and "2019-06-07";',[current_userid])
-    #         # print(user_geschiedenis)
-    #         print(user_geschiedenis)
-    #         return jsonify(user_geschiedenis)
+    @app.route('/shutdown')
+    def shutdown():
+        print('shutdown now')
+        GPIO.cleanup()
+        fs.delete()
+        call("sudo shutdown -h now".split())
+        return jsonify(messag='Apparaat is zodadelijk afgesloten en veilig om te verwijderen'), 200
 
     @socketio.on('getgeschiedenis')
     def geschiedenis():
         global current_userid
         print(current_userid)
-        user_geschiedenis = conn.get_data('SELECT concat(Date(Datum)) as datum, concat(Speeltijd) as speeltijd, concat((hour(speeltijd)*60) + Minute(Speeltijd)) as minuten FROM historiek where userid = %s order by datum desc limit 7',[current_userid])
+        user_geschiedenis = conn.get_data(
+            'SELECT concat(Date(Datum)) as datum, concat(Speeltijd) as speeltijd, concat((hour(speeltijd)*60) + Minute(Speeltijd)) as minuten FROM historiek where userid = %s order by datum desc limit 7',
+            [current_userid])
         # print(user_geschiedenis)
         print(user_geschiedenis)
         socketio.emit("setgeschiedenis", user_geschiedenis)
@@ -202,11 +203,13 @@ try:
         print("log user out")
         current_userid = None
 
+
     @socketio.on("setuser")
     def setuser(userid):
         global current_userid
-        print("userid = %s"%userid)
+        print("userid = %s" % userid)
         current_userid = userid
+
 
     @socketio.on("effect_toepassen")
     def effect_toepassen(json_data):
@@ -238,3 +241,4 @@ except Exception as e:
     print("Er ging iets mis, herstart het programma")
 finally:
     GPIO.cleanup()
+    fs.delete()
